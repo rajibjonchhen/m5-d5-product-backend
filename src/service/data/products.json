@@ -1,1 +1,57 @@
-[{"name":"3300","description":"Iphone","brand":"Iphone","price":100,"category":"smartphones","imageUrl":"http://localhost:300/","_id":"5cupdywkyy9xy3z","createAt":"2022-01-28T10:40:31.727Z","reviews":[{"comment":"working great","rate":5,"productId":"5cupdywkyy9xy3z","_id":"5cupf70kyybatly","updatedAt":"2022-01-28T12:06:11.783Z"}]},{"name":"3300","description":"blackberry","brand":"blackberry","price":100,"category":"smartphones","imageUrl":"http://localhost:300/","_id":"5cupdywkyy9y7rt","createAt":"2022-01-28T10:40:44.249Z","reviews":[{"comment":"A good book but definitely I don't like many parts of the plot","rate":3,"productId":"5cupdywkyy9y7rt","_id":"5cupf70kyybbqm9"}]},{"name":"Samsung Galaxy","description":"Latest Mobile Galaxy Note10","brand":"Samsung","price":1300,"category":"smartphones","_id":"5cup4hskyybhc79","createAt":"2022-01-28T11:23:36.068Z","imageUrl":"http://localhost:300/","reviews":[{"comment":"1.Samsung Latest Mobile features aren't working","rate":1,"productId":"5cup4hskyybhc79","_id":"5cup4hskyyblqkd"}]}]
+[
+  {
+    "name": "33001",
+    "description": "Iphone",
+    "brand": "Iphone",
+    "price": 100,
+    "category": "smartphones",
+    "imageUrl": "http://localhost:3001/portugal.jpeg",
+    "_id": "5cupdywkyy9xy3z",
+    "createAt": "2022-01-28T10:40:31.727Z",
+    "reviews": [
+      {
+        "comment": "working great",
+        "rate": 5,
+        "productId": "5cupdywkyy9xy3z",
+        "_id": "5cupf70kyybatly",
+        "updatedAt": "2022-01-28T12:06:11.783Z"
+      }
+    ]
+  },
+  {
+    "name": "33001",
+    "description": "blackberry",
+    "brand": "blackberry",
+    "price": 100,
+    "category": "smartphones",
+    "imageUrl": "http://localhost:3001/",
+    "_id": "5cupdywkyy9y7rt",
+    "createAt": "2022-01-28T10:40:44.249Z",
+    "reviews": [
+      {
+        "comment": "A good book but definitely I don't like many parts of the plot",
+        "rate": 3,
+        "productId": "5cupdywkyy9y7rt",
+        "_id": "5cupf70kyybbqm9"
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy",
+    "description": "Latest Mobile Galaxy Note10",
+    "brand": "Samsung",
+    "price": 13001,
+    "category": "smartphones",
+    "_id": "5cup4hskyybhc79",
+    "createAt": "2022-01-28T11:23:36.068Z",
+    "imageUrl": "http://localhost:3001//download.jpeg",
+    "reviews": [
+      {
+        "comment": "1.Samsung Latest Mobile features aren't working",
+        "rate": 1,
+        "productId": "5cup4hskyybhc79",
+        "_id": "5cup4hskyyblqkd"
+      }
+    ]
+  }
+]
