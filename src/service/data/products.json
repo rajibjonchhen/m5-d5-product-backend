@@ -5,7 +5,7 @@
     "brand": "Iphone",
     "price": 100,
     "category": "smartphones",
-    "imageUrl": "http://localhost:3001/portugal.jpeg",
+    "imageUrl": "https://via.placeholder.com/150/",
     "_id": "5cupdywkyy9xy3z",
     "createAt": "2022-01-28T10:40:31.727Z",
     "reviews": [
@@ -24,7 +24,7 @@
     "brand": "blackberry",
     "price": 100,
     "category": "smartphones",
-    "imageUrl": "http://localhost:3001/",
+    "imageUrl": "https://via.placeholder.com/150/",
     "_id": "5cupdywkyy9y7rt",
     "createAt": "2022-01-28T10:40:44.249Z",
     "reviews": [
@@ -44,7 +44,7 @@
     "category": "smartphones",
     "_id": "5cup4hskyybhc79",
     "createAt": "2022-01-28T11:23:36.068Z",
-    "imageUrl": "http://localhost:3001//download.jpeg",
+    "imageUrl": "https://via.placeholder.com/150/",
     "reviews": [
       {
         "comment": "1.Samsung Latest Mobile features aren't working",

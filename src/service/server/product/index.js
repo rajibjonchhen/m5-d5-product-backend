@@ -16,7 +16,7 @@ productsRouter.post("/", productValidator, async (req, res, next) => {
 
     if (errors.isEmpty()) {
       const productsArray = await getProducts()
-      const newProduct = { ...req.body, _id: uniqid(), createAt: new Date(), imageUrl: `http://localhost:300/` }
+      const newProduct = { ...req.body, _id: uniqid(), createAt: new Date(), imageUrl: `https://via.placeholder.com/150/` }
       productsArray.push(newProduct)
       await writeProducts(productsArray)
       res.status(201).send(`New product added with id - ${newProduct._id}`)
@@ -170,8 +170,8 @@ productsRouter.put("/:id/uploadProductImg", multer().single("image"), uploadFile
     const index = productsArray.findIndex((product) => product.id === req.params.id)
 
     const singleProduct = productsArray[index]
-    const updatedBody = req.body
-    const updateProduct = { ...singleProduct, ...updatedBody, imageUrl: req.file, updatedAt: new Date() }
+    // const updatedBody = req.body
+    const updateProduct = { ...singleProduct, imageUrl: req.file, updatedAt: new Date() }
     productsArray[index] = updateProduct
 
     await writeProducts(productsArray)
