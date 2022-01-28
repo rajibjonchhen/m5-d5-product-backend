@@ -1,0 +1,12 @@
+[
+  {
+    "name": "3310",
+    "description": "somthing longer",
+    "brand": "nokia",
+    "price": 100,
+    "category": "smartphones",
+    "_id": "6lhl20thkyy85mal",
+    "createAt": "2022-01-28T09:50:30.428Z",
+    "imageUrl": "http://localhost:300/"
+  }
+]
