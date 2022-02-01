@@ -167,16 +167,19 @@ productsRouter.delete("/:id/reviews/:reviewId", async (req, res, next) => {
 productsRouter.put("/:id/uploadProductImg", multer().single("image"), uploadFile, async (req, res, next) => {
   try {
     const productsArray = await getProducts()
-    const index = productsArray.findIndex((product) => product.id === req.params.id)
+    const index = productsArray.findIndex((product) => product._id === req.params.id)
 
     const singleProduct = productsArray[index]
-    // const updatedBody = req.body
-    const updateProduct = { ...singleProduct, imageUrl: req.file, updatedAt: new Date() }
+    const updatedBody = req.body
+    const updateProduct = { ...singleProduct,...updatedBody,imageUrl: req.file.url, updatedAt: new Date() }
     productsArray[index] = updateProduct
+    console.log(req.file.url)
 
     await writeProducts(productsArray)
     res.send(updateProduct)
-  } catch (error) {}
+  } catch (error) {
+      next(error)
+  }
 })
 
 productsRouter

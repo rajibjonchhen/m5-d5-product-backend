@@ -25,7 +25,7 @@ export const uploadFile = (req, res, next) => {
 
     fs.writeFileSync(pathToFile, buffer)
     const imageUrl = `http://localhost:3001/${fileName}`
-    req.file = imageUrl
+    req.file.url = imageUrl
     next()
   } catch (error) {
     next(error)
