@@ -6,12 +6,20 @@ import  {join} from 'path'
 import { badRequest, genericError, unauthorised, notFound } from "./errorHandler.js"
 
 const server = express()
-const port  = 3001
+const port  = process.env.PORT || 3001
 const publicFolderPath = join(process.cwd(), './public/image')
 
 server.use(express.static(publicFolderPath))
 server.use(express.json())
-server.use(cors())
+
+const whiteListOrigins = [process.env.FE_DEV_URL]
+server.use(cors({origin:function(origin,next){
+    if(!origin || whiteListOrigins.indexOf(origin) !== -1){
+        next(null, true)
+    } else{
+        next(new Error("cors error"))
+    }
+}}))
 
 server.use('/products',productsRouter)
 server.use(badRequest)
